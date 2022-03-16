@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+.dark-theme {
+  --bg-dark: hsl(230, 17%, 14%);
+  --bg-top-dark: hsl(232, 19%, 15%);
+  --card-dark: hsl(228, 28%, 20%);
+  --dark-text: hsl(228, 34%, 66%);
+  --white-dark: hsl(0, 0%, 100%);
+  --toggle-dark: linear-gradient(
+    to right,
+    hsl(210, 78%, 56%),
+    hsl(146, 68%, 55%)
+  );
+}
+.light-theme {
+  --bg-dark: hsl(0, 0%, 100%);
+  --bg-top-dark: hsl(225, 100%, 98%);
+  --card-dark: hsl(227, 47%, 96%);
+  --dark-text: hsl(228, 12%, 44%);
+  --white-dark: hsl(230, 17%, 14%);
+  --toggle-dark: hsl(230, 22%, 74%);
+}
+.light-toggle {
+  --bg-top-dark: white;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--bg-dark);
+  font-family: "Inter", sans-serif;
+  color: var(--dark-text);
+  width: 100%;
+  min-height: 100vh;
+}
+h4,
+h3 {
+  color: var(--white-dark);
+  font-weight: 700 !important;
+}
+h4 {
+  margin-bottom: 15px !important;
+}
+.container {
+  width: 100%;
+  max-width: 1100px !important;
+  margin: 0 auto !important;
+  padding: 15px 40px !important;
+}
+.d-flex {
+  display: flex;
+}
+.row {
+  display: flex;
+  gap: 1rem;
+}
+p {
+  margin: 0 !important;
+}
+.card {
+  text-align: center;
+  background-color: var(--card-dark);
+  padding: 12px;
+  width: calc(25% - 0.75rem);
+  border: none !important;
+}
+.small-text {
+  font-size: 10px;
+  font-weight: 700;
+}
+.large-text {
+  font-size: 40px;
+  color: var(--white-dark);
+  font-weight: 600;
+}
+.medium-text {
+  font-size: 14px;
+  color: var(--dark-text);
+  font-weight: 600;
+}
+.capitalize {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-top: -6px !important;
+  font-weight: 10 !important;
+}
+.icon-up {
+  color: hsl(163, 72%, 41%);
+}
+.icon-down {
+  color: hsl(356, 69%, 56%);
+}
+.card:hover {
+  filter: brightness(90%);
+}
+@media (max-width: 1025px) {
+  .large-text {
+    font-size: 34px;
+  }
+  .medium-text {
+    font-size: 12px;
+  }
+}
+@media (max-width: 845px) {
+  .card {
+    width: calc(50% - 0.5rem) !important;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    padding: 10px 20px !important;
+  }
+}
+@media (max-width: 585px) {
+  .card {
+    width: 100% !important;
+  }
+}

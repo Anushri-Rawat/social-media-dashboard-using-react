@@ -1,0 +1,16 @@
+.upper-cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: -80px !important;
+}
+@media (max-width: 1025px) {
+  .upper-cards {
+    margin-top: -90px !important;
+  }
+}
+@media (max-width: 767px) {
+  .upper-cards {
+    margin-top: -50px !important;
+  }
+}

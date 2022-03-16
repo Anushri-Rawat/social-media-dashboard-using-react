@@ -1,0 +1,32 @@
+.row {
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+.row img {
+  width: 20px;
+  height: 20px;
+}
+.percent {
+  display: inline;
+}
+.row-two {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.overview-large-text {
+  font-size: 28px;
+  color: var(--white-dark);
+  font-weight: 600;
+}
+.current-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+@media (max-width: 1025px) {
+  .overview-large-text {
+    font-size: 24px;
+  }
+}
